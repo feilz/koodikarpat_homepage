@@ -3,39 +3,59 @@
 
 <head>
 
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Koodikärpät</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/agency.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <!-- Custom Fonts-->
+    <link href="/assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery -->
+    <script src="../assets/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../assets/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="../assets/classie.js"></script>
+    <script src="../assets/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../assets/jqBootstrapValidation.js"></script>
+    <script src="../assets/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../assets/agency.js"></script>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../assets/template.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    <!--<[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <[endif]>-->
 </head>
 
 <body id="page-top" class="index">
-
-    <!-- Navigation -->
+    <!-- Navigation--> 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -46,7 +66,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Koodikärpät</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="assets/koodikarpat.png" alt="Koodikärpät"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,21 +74,22 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
+                    </li>-->
+
+                    <li>
+                        <a class="page-scroll" href="#services">Palvelut</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#portfolio">Projektit</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#about">Tarina</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#team">Tiimi</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Ota yhteyttä</a>
                     </li>
                 </ul>
             </div>
@@ -81,12 +102,41 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Koodikärpät</div>
+                <div class="intro-lead-in">koodikärpät</div>
                 <div class="intro-heading">Tervetuloa!</div>
                 <a href="#services" class="page-scroll btn btn-xl">Lue Lisää!</a>
             </div>
         </div>
     </header>
+
+
+    <!-- Clients Aside -->
+    <aside class="clients bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="http://www.bittium.com/">
+                        <img src="assets/1.png" class="img-responsive img-centered" alt="Bittium">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="http://www.nokia.com/fi_fi">
+                        <img src="assets/2.png" class="img-responsive img-centered" alt="Nokia">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="http://www.symbio.com/fi/">
+                        <img src="assets/3.png" class="img-responsive img-centered" alt="Symbio">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="http://www.businessoulu.com/">
+                        <img src="assets/4.png" class="img-responsive img-centered" alt="Business Oulu">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
 
     <!-- Services Section -->
     <section id="services">
@@ -97,7 +147,7 @@
                     <h3 class="section-subheading text-muted">Haluamme tuoda tekniikan alaa lähemmäs ihmisiä!</h3>
                 </div>
             </div>
-            <div class="row text-center">
+            <div class="row text-center services-actions">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -131,7 +181,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Projektejamme</h2>
+                    <h2 class="section-heading">Projektit</h2>
                     <h3 class="section-subheading text-muted">Tässä tällä hetkellä työn alla olevia projekteja</h3>
                 </div>
             </div>
@@ -229,7 +279,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
+                    <h2 class="section-heading">Tarina</h2>
                     <h3 class="section-subheading text-muted">Hankkeen alkuaskeleet</h3>
                 </div>
             </div>
@@ -308,14 +358,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Team!</h2>
+                    <h2 class="section-heading">Tiimi</h2>
                     <h3 class="section-subheading text-muted">Homma lähtee liikkeelle</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img src="assets/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <img src="assets/team/1.jpg" class="img-responsive img-circle" alt="Ackers">
                         <h4>Dan Ackers</h4>
                         <p class="text-muted">Hankkeen johtaja</p>
                         <ul class="list-inline social-buttons">
@@ -330,7 +380,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img src="assets/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <img src="assets/team/2.jpg" class="img-responsive img-circle" alt="Vahala">
                         <h4>Johannes Vahala</h4>
                         <p class="text-muted">Myynti, markkinointi, viestintä</p>
                         <ul class="list-inline social-buttons">
@@ -346,40 +396,13 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Meidän tavoite on saada lisää ihmisiä kiinnostumaan tekniikan alasta. Haluamme herättää kiinnostusta näihin hommiin kokemuksen ja oman innostuksen kautta! <br>
+                    <p class="large text-muted">Tavoittemme on saada lisää ihmisiä kiinnostumaan tekniikan alasta. Haluamme herättää kiinnostusta näihin hommiin kokemuksen ja oman innostuksen kautta! <br>
                     Kaipaamme myös lisää innokkaita työntekijöitä tuomaan lisää ihmisiä alalle. Ota yhteyttä mikäli haluat mukaan!</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Clients Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="assets/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="assets/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="assets/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="assets/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
     
     <!-- Contact Section -->
     <section id="contact">
@@ -434,11 +457,11 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        <li><a href="https://twitter.com/koodikarpat"><i class="fa fa-twitter"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        <li><a href="https://www.facebook.com/koodikarpat/"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        <li><a href="https://www.instagram.com/koodikarpat/"><i class="fa fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -623,24 +646,6 @@
             </div>
         </div>
     </div>
-
-    <!-- jQuery -->
-    <script src="assets/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="assets/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="assets/classie.js"></script>
-    <script src="assets/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="assets/jqBootstrapValidation.js"></script>
-    <script src="assets/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="assets/agency.js"></script>
 
 </body>
 
