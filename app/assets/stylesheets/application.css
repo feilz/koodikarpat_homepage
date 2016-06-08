@@ -14,10 +14,11 @@
  *= require_self
  */
 
-.navbar-brand {
+.navbar > .container .navbar-brand {
 	padding:0;
+	margin-left:0;
 }
-.navbar-brand > img {
+.navbar > .container .navbar-brand > img {
 	height:100px;
 	-webkit-transition: height .2s;
     -moz-transition: height .2s;
@@ -25,8 +26,11 @@
 }
 
 @media (max-width: 767px) {
-	.navbar-brand > img {
+	.navbar > .container .navbar-brand > img {
 		height:50px;
+	}
+	header .intro-text .intro-heading {
+		font-family:Arimo;
 	}
 }
 @media (min-width: 768px) {

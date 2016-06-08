@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'grafiikka/index'
+
   get 'welcome/homepage'
 
   # The priority is based upon order of creation: first created -> highest priority.

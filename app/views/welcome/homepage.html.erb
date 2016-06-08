@@ -4,7 +4,6 @@
 <head>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
     <meta charset="utf-8">
@@ -16,35 +15,11 @@
     <title>Koodikärpät</title>
 
     <!-- Custom Fonts-->
-    <link href="/assets/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
-    <!-- jQuery -->
-    <script src="../assets/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../assets/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="../assets/classie.js"></script>
-    <script src="../assets/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="../assets/jqBootstrapValidation.js"></script>
-    <script src="../assets/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="../assets/agency.js"></script>
-    
-    <!-- Bootstrap Core CSS -->
-    <link href="../assets/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="../assets/template.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -74,8 +49,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
-                    </li>-->
-
+                    </li>
                     <li>
                         <a class="page-scroll" href="#services">Palvelut</a>
                     </li>
@@ -103,7 +77,7 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">koodikärpät</div>
-                <div class="intro-heading">Tervetuloa!</div>
+                <h1 class="intro-heading">Tervetuloa!</h1>
                 <a href="#services" class="page-scroll btn btn-xl">Lue Lisää!</a>
             </div>
         </div>
@@ -137,7 +111,6 @@
             </div>
         </div>
     </aside>
-
     <!-- Services Section -->
     <section id="services">
         <div class="container">
@@ -147,32 +120,7 @@
                     <h3 class="section-subheading text-muted">Haluamme tuoda tekniikan alaa lähemmäs ihmisiä!</h3>
                 </div>
             </div>
-            <div class="row text-center services-actions">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Ehdota projektia!</h4>
-                    <p class="text-muted">Ehdota projektia meidän työpajaan! Maksat vain mikäli pidät lopputuloksesta</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Työnhakijalle</h4>
-                    <p class="text-muted">Mikäli haluat paikan huipputiimiimme, hae tästä</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Yhteistyökumppaniksi</h4>
-                    <p class="text-muted">Haemme jatkuvasti lisää sponsoreita ja yhteistyökumppaneita! Ota yhteyttä tästä!</p>
-                </div>
-            </div>
+            
         </div>
     </section>
 
@@ -187,7 +135,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="grafiikka/index" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -369,11 +317,11 @@
                         <h4>Dan Ackers</h4>
                         <p class="text-muted">Hankkeen johtaja</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            <li><a href="https://twitter.com/feilzi"><i class="fa fa-twitter"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/dalund"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.linkedin.com/in/dalund"><i class="fa fa-linkedin"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -386,9 +334,9 @@
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/johannes.vahala"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.linkedin.com/in/johannes-vahala-885551113"><i class="fa fa-linkedin"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -413,6 +361,33 @@
                     <h3 class="section-subheading text-muted">Vastaamme kaikkiin yhteydenottoihin 24 tunnin sisällä!</h3>
                 </div>
             </div>
+            <div class="row text-center services-actions">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Ehdota projektia!</h4>
+                    <p class="text-muted">Ehdota projektia meidän työpajaan! Maksat vain mikäli pidät lopputuloksesta</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Työnhakijalle</h4>
+                    <p class="text-muted">Mikäli haluat paikan huipputiimiimme, hae tästä</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Yhteistyökumppaniksi</h4>
+                    <p class="text-muted">Haemme jatkuvasti lisää sponsoreita ja yhteistyökumppaneita! Ota yhteyttä tästä!</p>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-lg-12">
                     <form name="sentMessage" id="contactForm" novalidate>
@@ -646,7 +621,8 @@
             </div>
         </div>
     </div>
-
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 </body>
 
 </html>
