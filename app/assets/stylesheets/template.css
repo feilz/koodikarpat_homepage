@@ -178,7 +178,7 @@ header .intro-text .intro-heading {
 }
 section { padding: 100px 0 }
 section h2.section-heading {
-    font-size: 40px;
+    font-size: 37px;
     margin-top: 0;
     margin-bottom: 15px;
 }
@@ -196,6 +196,7 @@ section h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+    color:#fff;
 }
 #portfolio .portfolio-item {
     margin: 0 0 15px;

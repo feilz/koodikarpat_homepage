@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
-  get 'grafiikka/index'
+  get '/lukkari', to: 'lukkari#index'
+
+  get '/robootti', to: 'robootti#index'
+
+  get '/java_alkeet', to: 'java_alkeet#index'
+
+  get '/koodikarpat_peli', to: 'koodikarpat_peli#index'
+
+  get '/grafiikka', to: 'grafiikka#index'
 
   get 'welcome/homepage'
 

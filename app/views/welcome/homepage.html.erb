@@ -1,83 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Koodikärpät</title>
-
-    <!-- Custom Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--<[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <[endif]>-->
-</head>
-
-<body id="page-top" class="index">
-    <!-- Navigation--> 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="assets/koodikarpat.png" alt="Koodikärpät"></a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Palvelut</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Projektit</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">Tarina</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Tiimi</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Ota yhteyttä</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
+<%= render 'header', page: 'Koodikärpät' %>
     <!-- Header -->
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">koodikärpät</div>
-                <h1 class="intro-heading">Tervetuloa!</h1>
+                <h1 class="intro-heading kk-font">koodikärpät</h1>
+                <div class="intro-lead-in">Tavoite </div>
                 <a href="#services" class="page-scroll btn btn-xl">Lue Lisää!</a>
             </div>
         </div>
@@ -116,8 +43,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Palvelut</h2>
-                    <h3 class="section-subheading text-muted">Haluamme tuoda tekniikan alaa lähemmäs ihmisiä!</h3>
+                    <h2 class="section-heading">Mikä Koodikärpät</h2>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <img src="assets/about/bulb.jpg" alt="Bittilamppu" class="about-img">
+                        </div>
+                        <div class="col-sm-7 text-left">
+                            <p>Yhä harvempi nuori suuntautuu tekniikan alalle toiseen asteen opintojen jälkeen, vaikka kiinnostus koodaamiseen ja tekniikkaan on valtava. Koodikärpät-kampanjalla halutaan rohkaista nuoria lähtemään opiskelemaan tekniikkaa antamalla heille ensikosketuksen tekniikan alan töihin.  Kesän 2016 aikana kampanja työllistää Oulussa 15-25 -vuotiaita erilaisiin tekniikan ja ohjelmoinnin projekteihin. Tarkoituksena on pitkäjänteisesti kehittää tekniikan osaamista ja tukea nuoria ensiaskeleissaan tekniikan alalla.</p>
+                            <p>Koodikärpät-kampanjan yhteistyökumppaneina toimii Oulun alueen tekniikan alan yrityksiä, jotka tarjoavat rahoitusta ja ehdottavat projekteja nuorten toteutettaviksi. Harjoittelijoiltamme vaadimme ainoastaan omaa innostusta ja kiinnostusta ohjelmointiin. Tehtävien luonne ja haastavuus tulevat vaihtelemaan nuorten osaamisen sekä omien toiveiden mukaan. </p>
+                            <p>Etsimme jatkuvasti uusia sponsoreita ja yhteistyökumppaneita! Jos haluat olla mukana tukemassa nuorten kesätyöllistymistä ja Oulun alueen tulevaisuuden tekniikkaosaamista , ota yhteyttä Dan Ackersiin (ackersdan@gmail.com / 044 235 0160)</p>
+                            <p>Haemme myös edelleen mukaan tekniikasta kiinnostuneita 15-25 -vuotiaita nuoria. Jos kiinnostuit, täytä hakemus <a href="#contact" class="addtomenu" data-name="contact">täällä</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -149,17 +87,17 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <a href="/koodikarpat_peli" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/portfolio/startup-framework.png" class="img-responsive" alt="">
+                        <img src="assets/portfolio/kk_peli.jpg" class="img-responsive" alt="Koodikärpät-peli">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Esimerkki 1</h4>
-                        <p class="text-muted">esim</p>
+                        <h4>Koodikärpät-peli</h4>
+                        <p class="text-muted">Kokoelma minipelejä</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -228,7 +166,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Tarina</h2>
-                    <h3 class="section-subheading text-muted">Hankkeen alkuaskeleet</h3>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
             <div class="row">
@@ -241,10 +179,10 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Maaliskuu-2016</h4>
-                                    <h4 class="subheading">Alkuhetket</h4>
+                                    <h4 class="subheading">Ensiaskeleet</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Idea syntyi, ja päätin ryhtyä hakemaan lisää ihmisiä mukaan projektiin. Ideani oli ottaa ~10 nuorta mukaan, joita lähtisin kouluttamaan kunnon ohjelmoijia</p>
+                                    <p class="text-muted">Ajatus Koodikärpät-kampanja syntyy. Tarkoituksena oli tarjota kymmenelle nuorelle mahdollisuus kouluttautua kunnon ohjelmoijiksi. Jotta hanke toteutuisi, mukaan lähdetttin hakemaan lisää ihmisiä.</p>
                                 </div>
                             </div>
                         </li>
@@ -255,10 +193,10 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Huhtikuu-2016</h4>
-                                    <h4 class="subheading">Johannes liittyi mukaan</h4>
+                                    <h4 class="subheading">Uusille urille</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Juttelin usean henkilön kanssa tästä projektista, ja tuntui todella helpolta saada ihmisiä innostumaan hankkeestani. Totesin pian että projekti meni liian isoksi että pystyisin itsekseni hoitamaan kaiken. Tämän vuoksi rekrytoin Johanneksen mukaan hoitamaan markkinointia, myyntiä ja viestintää.</p>
+                                    <p class="text-muted">Hanke sai innostuneen vastaanoton ja hyvin pian projekti kasvoi liian suureksi yhden ihmisen vedettäväksi. Lisävahvistusta saatiin Johanneksesta, joka liittyi mukaan hoitamaan projektin markkinointia, myyntiä ja viestintää. </p>
                                 </div>
                             </div>
                         </li>
@@ -269,10 +207,10 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Toukokuu-2016</h4>
-                                    <h4 class="subheading">Rekrytointi</h4>
+                                    <h4 class="subheading">Liittymäkohtia</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Ihmisten kiinnostus on ylittänyt kaikki odotukseni. Yli 70 henkeä on hakenut jo paikkaa, ja olen heistä haastatellut 68. Tarkoitus on vielä useampaa haastatella, ja toivon mukaan saadaan kaikki mukaan</p>
+                                    <p class="text-muted">Nuorten kiinnostus kampanjaan ylitti kaikki odotukset. Hakemuksia saatiin yli 70 ja lopulta mukaan lähti 55 innokasta nuorta työntekijää. Heistä 29 työskentelee kesätyösetelillä.</p>
                                 </div>
                             </div>
                         </li>
@@ -283,16 +221,30 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Toukokuu-2016</h4>
-                                    <h4 class="subheading">Yritysyhteistyö</h4>
+                                    <h4 class="subheading">Palat kohdalleen</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Näyttää siltä että saisimme maksettua palkan 2 viikosta kaikille. Toivon kuitenkin että ihmiset jotka tulevat mukaan innostuvat hankkeestani tarpeeksi että haluavat olla mukana vain oppiakseen lisää vaikka meillä ei ole varaa maksaa palkkaa loppuajasta.</p>
+                                    <p class="text-muted">Koodikärpät-kampanja on vankalla pohjalla, kiitos yhteistyökumppaneiden ja sponsoreiden. Heiltä on saatu mielenkiintoisia projekti-ideoita nuorten toteutettavaksi. Rahoittajien ansiosta pystytään näillä näkymin kaikille nuorille  maksamaan heidän työpanoksestaan kahden viikon ajalta. Toivottavasti innostus ja oppimisen ilo pitävät nämä ihmiset mukana koko kesän.a vain oppiakseen lisää vaikka meillä ei ole varaa maksaa palkkaa loppuajasta.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-image">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="assets/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Kesäkuu-2016</h4>
+                                    <h4 class="subheading">Matka alkaa</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Kampanja polkaistaan käyntiin vauhdilla ja nuoret pääsevät toteuttamaan projekteja, kukin oman kiinnostuksena ja vahvuutensa mukaan. Mukana on upeita nuoria, joilla on aito halu ja innostus tarttua projekteihin. Tällä hetkellä työn alla on esimerkiksi android-sovelluksien ja -pelien, robottipuvun, puheentunnistusjärjestelmän sekä nettisivujen kehittämistä. </p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <h4>Ole osa <br>meidän tarinaa!</h4>
+                                <h4>Tule sinäkin <br>mukaan rakentamaan <br>tietämme!</h4>
                             </div>
                         </li>
                     </ul>
@@ -388,7 +340,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row formrow disabled">
                 <div class="col-lg-12">
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
@@ -423,206 +375,5 @@
             </div>
         </div>
     </section>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Koodikärpät 2016</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="https://twitter.com/koodikarpat"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="https://www.facebook.com/koodikarpat/"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="https://www.instagram.com/koodikarpat/"><i class="fa fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">About</a>
-                        </li>
-                        <li><a href="#">Keitä me olemme</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="assets/portfolio/roundicons-free.png" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                            <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Heading</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="assets/portfolio/startup-framework-preview.png" alt="">
-                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="assets/portfolio/treehouse-preview.png" alt="">
-                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="assets/portfolio/golden-preview.png" alt="">
-                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="assets/portfolio/escape-preview.png" alt="">
-                            <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="assets/portfolio/dreams-preview.png" alt="">
-                            <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-</body>
-
-</html>
+    <div class="visible-xs"></div>
+<%= render 'footer' %>
