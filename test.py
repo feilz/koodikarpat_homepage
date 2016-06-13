@@ -13,6 +13,4 @@ def isPrime(n):
 		f +=6
 	return True 
 
-print isPrime(21)
-
 print isPrime(23)
