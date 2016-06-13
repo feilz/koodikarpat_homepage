@@ -14,5 +14,3 @@ def isPrime(n):
 	return True 
 
 print isPrime(21)
-
-print isPrime(23)
