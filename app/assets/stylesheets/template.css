@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     border-radius: 3px;
     font-size: 18px;
-    padding: 20px 40px;
+    padding: 10px 25px;
 }
 .btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
     color: #fff;
@@ -178,7 +178,7 @@ header .intro-text .intro-heading {
 }
 section { padding: 100px 0 }
 section h2.section-heading {
-    font-size: 37px;
+    font-size: 34px;
     margin-top: 0;
     margin-bottom: 15px;
 }
@@ -236,7 +236,7 @@ section h3.section-subheading {
     margin: 0 auto;
     background-color: #fff;
     text-align: center;
-    padding: 25px;
+    padding: 25px 10px;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
     text-transform: none;
@@ -390,7 +390,6 @@ section h3.section-subheading {
         height: 170px;
         margin-left: -85px;
     }
-    .timeline>li .timeline-image h4 { margin-top: 40px }
     .timeline>li.timeline-inverted>.timeline-panel { padding: 0 100px 20px 20px }
 }
 .team-member {

@@ -1,4 +1,20 @@
 $(function() {
+    var types=['Työnhakemus', 'Yhteistyökumppanuus/Sponsorointi', '', 'Projektiehdotus', 'Yleinen'];
+    $('#contact .services-actions .col-md-3').click(function() {
+        if(!$(this).hasClass('selected')) {
+            $('#contact .services-actions .col-md-3').removeClass('selected');
+            $('#contact .services-actions').addClass('contact-started');
+            $(this).addClass('selected');
+
+            $('#contact-type').val(types[$(this).index()]);
+
+            $('.formrowcontainer').css({ 'height' : ($('.formrow').height()), 'margin-top':"100px"});
+            $('.formrow').slideUp({duration:400,easing:"easeInOutExpo",complete: function() {
+                $(this).slideDown(400);
+            }
+            });
+        }
+    });
 
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
@@ -6,7 +22,7 @@ $(function() {
             // additional error messages or events
         },
         submitSuccess: function($form, event) {
-            event.preventDefault(); // prevent default submit behaviour
+            
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
@@ -17,7 +33,7 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
-            $.ajax({
+            /*$.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
                 data: {
@@ -50,7 +66,7 @@ $(function() {
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-            })
+            })*/
         },
         filter: function() {
             return $(this).is(":visible");
