@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 	var section = $("section");
 	var headerelem;
@@ -26,7 +25,7 @@ $(document).ready(function(){
 
 		}
 
-		if ($(section[i]).hasAttr("data-name"))
+		if ($(section[i])[0].hasAttribute("data-name"))
 		{
 			header = $(section[i]).attr("data-name");
 			if (header.length < 1)
