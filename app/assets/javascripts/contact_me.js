@@ -6,7 +6,7 @@ $(function() {
             $('#contact .services-actions').addClass('contact-started');
             $(this).addClass('selected');
 
-            $('#contact-type').val(types[$(this).index()]);
+            $('#contactform_contact_type').val(types[$(this).index()]);
 
             $('.formrowcontainer').css({ 'height' : ($('.formrow').height()), 'margin-top':"100px"});
             $('.formrow').slideUp({duration:400,easing:"easeInOutExpo",complete: function() {
@@ -22,25 +22,23 @@ $(function() {
             // additional error messages or events
         },
         submitSuccess: function($form, event) {
-            
-            // get values from FORM
-            var name = $("input#name").val();
-            var email = $("input#email").val();
-            var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
-            var firstName = name; // For Success/Failure Message
-            // Check for white space in name for Success/Fail message
-            if (firstName.indexOf(' ') >= 0) {
-                firstName = name.split(' ').slice(0, -1).join(' ');
-            }
-            /*$.ajax({
-                url: "././mail/contact_me.php",
+            event.preventDefault();
+            var name = $("#contactform_contact_name").val();
+            var email = $("#contactform_contact_email").val();
+            var phone = $("#contactform_contact_phone").val();
+            var message = $("#contactform_contact_msg").val();
+            var type = $("#contactform_contact_type").val();
+            var csrft = $("#authtoken").val();
+            $.ajax({
+                url: "../contactforms",
                 type: "POST",
                 data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
+                    "contactform[contact_type]": type,
+                    "contactform[contact_name]": name,
+                    "contactform[contact_phone]": phone,
+                    "contactform[contact_email]": email,
+                    "contactform[contact_msg]": message,
+                    "authenticity_token": csrft
                 },
                 cache: false,
                 success: function() {
@@ -61,12 +59,12 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
+                    $('#success > .alert-danger').append("<strong>Sorry it seems that my mail server is not responding. Please try again later!");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-            })*/
+            })
         },
         filter: function() {
             return $(this).is(":visible");

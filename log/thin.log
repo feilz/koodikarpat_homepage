@@ -18,3 +18,45 @@ Exiting!
 	from /root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thin-1.7.0/bin/thin:6:in `<top (required)>'
 	from /root/.rbenv/versions/2.3.1/bin/thin:23:in `load'
 	from /root/.rbenv/versions/2.3.1/bin/thin:23:in `<main>'
+Writing PID to tmp/pids/thin.pid
+Using rack adapter
+Thin web server (v1.7.0 codename Dunder Mifflin)
+Maximum connections set to 1024
+Listening on 0.0.0.0:81, CTRL+C to stop
+Invalid request: Invalid HTTP format, parsing fails.
+	/root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thin-1.7.0/lib/thin/request.rb:84:in `execute'
+	/root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thin-1.7.0/lib/thin/request.rb:84:in `parse'
+	/root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thin-1.7.0/lib/thin/connection.rb:39:in `receive_data'
+	/root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/eventmachine-1.2.0.1/lib/eventmachine.rb:194:in `run_machine'
+	/root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/eventmachine-1.2.0.1/lib/eventmachine.rb:194:in `run'
+	/root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thin-1.7.0/lib/thin/backends/base.rb:73:in `start'
+	/root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thin-1.7.0/lib/thin/server.rb:162:in `start'
+	/root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thin-1.7.0/lib/thin/controllers/controller.rb:87:in `start'
+	/root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thin-1.7.0/lib/thin/runner.rb:200:in `run_command'
+	/root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thin-1.7.0/lib/thin/runner.rb:156:in `run!'
+	/root/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thin-1.7.0/bin/thin:6:in `<top (required)>'
+	/root/.rbenv/versions/2.3.1/bin/thin:23:in `load'
+	/root/.rbenv/versions/2.3.1/bin/thin:23:in `<main>'
+
+Restarting ...
+Writing PID to tmp/pids/thin.pid
+Using rack adapter
+Thin web server (v1.7.0 codename Dunder Mifflin)
+Maximum connections set to 1024
+Listening on 0.0.0.0:81, CTRL+C to stop
+Writing PID to tmp/pids/thin.pid
+Using rack adapter
+Thin web server (v1.7.0 codename Dunder Mifflin)
+Maximum connections set to 1024
+Listening on 0.0.0.0:81, CTRL+C to stop
+Restarting ...
+Writing PID to tmp/pids/thin.pid
+Using rack adapter
+Thin web server (v1.7.0 codename Dunder Mifflin)
+Maximum connections set to 1024
+Listening on 0.0.0.0:81, CTRL+C to stop
+Writing PID to tmp/pids/thin.pid
+Using rack adapter
+Thin web server (v1.7.0 codename Dunder Mifflin)
+Maximum connections set to 1024
+Listening on 0.0.0.0:81, CTRL+C to stop

@@ -31,7 +31,7 @@
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a href="http://www.businessoulu.com/">
+                   <a href="http://www.businessoulu.com/">
                         <img src="assets/4.png" class="img-responsive img-centered" alt="Business Oulu">
                     </a>
                 </div>
@@ -338,36 +338,44 @@
             <div class="formrowcontainer">
                 <div class="row formrow" style="display:none;">
                     <div class="col-lg-12">
-                        <form name="sentMessage" action="mailto:ackersdan@gmail.com" id="contactForm" novalidate>
-                            <input type="hidden" name="type" id="contact-type" value="">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nimi" id="name" required data-validation-required-message="Ole hyvä ja syötä nimesi.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Sähköpostiosoite" id="email" required data-validation-required-message="Ole hyvä ja syötä sähköpostiosoitteesi.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="tel" class="form-control" placeholder="Puhelinnumero" id="phone" required data-validation-required-message="Ole hyvä ja syötä puhelinnumerosi.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
+                        <form name="sentMessage" accept-charset="UTF-8" method="post" id="contactForm" novalidate>
+                        <input type="hidden" name="contactform[contact_type]" id="contactform_contact_type" value="">
+                        <input type="hidden" name="authenticity_token" id="authtoken" value="<%= form_authenticity_token %>">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="contactform[contact_name]" id="contactform_contact_name" class="form-control" placeholder="Nimi" required data-validation-required-message="Ole hyvä ja syötä nimesi.">
+                                    <p class="help-block text-danger"></p>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Viesti" id="message" required data-validation-required-message="Ole hyvä ja kirjoita viesti."></textarea>
-                                        <p class="help-block text-danger"></p>
-                                    </div>
+                                <div class="form-group">
+                                    <input type="text" name="contactform[contact_email]" id="contactform_contact_email" class="form-control" placeholder="Sähköpostiosoite" required data-validation-required-message="Ole hyvä ja syötä sähköpostiosoitteesi.">
+                                    <p class="help-block text-danger"></p>
                                 </div>
-                                <div class="clearfix"></div>
-                                <div class="col-lg-12 text-center">
-                                    <div id="success"></div>
-                                    <button type="submit" class="btn btn-xl">Lähetä!</button>
+                                <div class="form-group">
+                                    <input type="text" name="contactform[contact_phone]" id="contactform_contact_phone" class="form-control" placeholder="Puhelinnumero" required data-validation-required-message="Ole hyvä ja syötä puhelinnumerosi.">
+                                    <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                        </form>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea name="contactform[contact_msg]" id="contactform_contact_msg" class="form-control" placeholder="Viesti" required data-validation-required-message="Ole hyvä ja kirjoita viesti."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button name="commit" value="Create Contactform" class="btn btn-xl">Lähetä!
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
                     </div>
                 </div>
             </div>
