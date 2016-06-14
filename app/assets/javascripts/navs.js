@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 		}
 
-		if ($(section[i]).attr("data-name"))
+		if ($(section[i]).hasAttr("data-name"))
 		{
 			header = $(section[i]).attr("data-name");
 			if (header.length < 1)
