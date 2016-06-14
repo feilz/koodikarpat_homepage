@@ -14,6 +14,13 @@
  *= require_self
  */
 
+header#page-java-alkeet {
+    background-image: url(../assets/header-bg-java-alkeet.jpg);
+}
+header#page-grafiikka {
+    background-image: url(../assets/header-bg-grafiikka.jpg);
+}
+
 .navbar > .container .navbar-brand {
 	padding:0;
 	margin-left:0;
@@ -255,4 +262,11 @@ span.kk-font {
 	height:400px;
 	max-width:100%;
 	padding-bottom:15px;
+}
+#projects.portfolio .portfolio-item .portfolio-caption {
+    background-color: #f7f7f7;
+}
+#projects.portfolio .portfolio-item img.img-responsive {
+    height: 260px;
+    object-fit: cover;
 }
