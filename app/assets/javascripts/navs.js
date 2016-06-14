@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
 	var section = $("section");
+	var headerelem;
 	var header;
 	var id;
 	var links;
@@ -9,15 +10,29 @@ $(document).ready(function(){
 	for (var i = 0; i < section.length; i++)
 	{
 		id = $(section[i]).attr("id");
-		header = $(section[i]).find(".section-heading").html();
-		if (header.length < 1)
+		headerelem = $(section[i]).find(".section-heading");
+
+		if (headerelem.length < 1)
 		{
 			header = id;
 		}
+		else
+		{
+			header = $(headerelem).html();
+			if (header.length < 1)
+			{
+				header = id;
+			}
 
-		if ($(section[i]).attr("data-name"))
+		}
+
+		if ($(section[i]).hasAttr("data-name"))
 		{
 			header = $(section[i]).attr("data-name");
+			if (header.length < 1)
+			{
+				continue;
+			}
 		}
 		
 		$(".build-navs").append("<li class='currentmenu'><a class='scroller page-scroll' data-menuid='"+header+"' href='#"+id+"'>"+header+"</a></li>");
