@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :contactforms
-  resources :contacts
   get '/lukkari', to: 'lukkari#index'
 
   get '/robootti', to: 'robootti#index'
