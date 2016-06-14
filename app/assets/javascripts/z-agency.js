@@ -20,7 +20,6 @@ $(function() {
         }, 1500, 'easeInOutExpo');
 
     });
-});
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
@@ -30,4 +29,11 @@ $('body').scrollspy({
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
+});    
+
+    $('#picture-modal').on('show.bs.modal', function (event) {
+      var img = $('img',event.relatedTarget);
+
+      $(this).find('#modal-img').attr('src', img.attr('src')).attr('alt', img.attr('alt'));
+    });
 });
