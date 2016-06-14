@@ -8,7 +8,7 @@ class ContactMailer < ApplicationMailer
     @contactform = contactform
     mail(to: 'testikktesti@gmail.com',
          reply_to: @contactform.contact_name+" <"+@contactform.contact_email+">", 
-         from: @contactform.contact_name+" <"+@contactform.contact_email+">",
+         from: @contactform.contact_name+" <lomake@koodikarpat.com>",
          subject: "Koodikarpat-lomake: "+@contactform.contact_type) do |format|
       format.text { render :text => "Tyyppi: "+ @contactform.contact_type + "\n\nNimi: "+ @contactform.contact_name + "\nS-posti: "+ @contactform.contact_email + "\nPuh: "+ @contactform.contact_phone + "\n\nViesti: \n"+ @contactform.contact_msg }
     end
