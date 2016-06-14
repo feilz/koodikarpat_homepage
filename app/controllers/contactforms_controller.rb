@@ -29,11 +29,7 @@ class ContactformsController < ApplicationController
     respond_to do |format|
       if @contactform.save
         ContactMailer.contact_email(@contactform).deliver_now
-        format.html { redirect_to @contactform, notice: 'Contactform was successfully created.' }
-        format.json { render :show, status: :created, location: @contactform }
-      else
-        format.html { render :new }
-        format.json { render json: @contactform.errors, status: :unprocessable_entity }
+        format.html { redirect_to @contactform, notice: '1' }
       end
     end
   end
