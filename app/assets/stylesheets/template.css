@@ -176,6 +176,9 @@ header .intro-text .intro-heading {
         margin-bottom: 50px;
     }
 }
+#java-alkeet {
+    background-image: url(../assets/header-bg-java-alkeet.jpg);
+}
 section { padding: 100px 0 }
 section h2.section-heading {
     font-size: 34px;
@@ -409,7 +412,6 @@ section h3.section-subheading {
 aside.clients img { margin: 50px auto }
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;
 }
