@@ -1,0 +1,33 @@
+<%= render :partial => 'welcome/header', :locals => { :page => 'Grafiikka • Projektit • Koodikärpät' } %>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <h1 class="intro-heading">Grafiikka</h1>
+                <div class="intro-lead-in"><span class="kk-font">koodikärpät</span>-projekti</div>
+                <a href="#blog" class="page-scroll btn btn-xl">Lue Lisää!</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Clients Aside -->
+    <aside class="clients bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                 	<p class="text-muted project-summary"><i>Lyhyt tiivistelmä projektista</i></p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+            	<div class="col-sm-12"><h2 class="section-heading">Tämä sivu on työn alla</h2></div>
+            </div>
+        </div>
+    </section>
+   
+<%= render :partial => 'welcome/footer' %>
