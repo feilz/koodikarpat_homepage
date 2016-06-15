@@ -207,7 +207,7 @@
     </section>
 
     
-    <!-- Contact Section -->
+<!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -256,47 +256,43 @@
                 <div class="row formrow" style="display:none;">
                     <div class="col-lg-12">
                         <form name="sentMessage" accept-charset="UTF-8" method="post" id="contactForm" novalidate>
-                        <input type="hidden" name="contactform[contact_type]" id="contactform_contact_type" value="">
-                        <input type="hidden" name="authenticity_token" id="authtoken" value="<%= form_authenticity_token %>">
+                            <input type="hidden" name="contactform[contact_type]" id="contactform_contact_type" value="">
+                            <input type="hidden" name="authenticity_token" id="authtoken" value="<%= form_authenticity_token %>">
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" name="contactform[contact_name]" id="contactform_contact_name" class="form-control" placeholder="Nimi" required data-validation-required-message="Ole hyvä ja syötä nimesi.">
-                                    <p class="help-block text-danger"></p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="contactform[contact_name]" id="contactform_contact_name" class="form-control" placeholder="Nimi" required data-validation-required-message="Ole hyvä ja syötä nimesi.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="contactform[contact_email]" id="contactform_contact_email" class="form-control" placeholder="Sähköpostiosoite" required data-validation-required-message="Ole hyvä ja syötä sähköpostiosoitteesi.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="contactform[contact_phone]" id="contactform_contact_phone" class="form-control" placeholder="Puhelinnumero" required data-validation-required-message="Ole hyvä ja syötä puhelinnumerosi.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" name="contactform[contact_email]" id="contactform_contact_email" class="form-control" placeholder="Sähköpostiosoite" required data-validation-required-message="Ole hyvä ja syötä sähköpostiosoitteesi.">
-                                    <p class="help-block text-danger"></p>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea name="contactform[contact_msg]" id="contactform_contact_msg" class="form-control" placeholder="Viesti" required data-validation-required-message="Ole hyvä ja kirjoita viesti."></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" name="contactform[contact_phone]" id="contactform_contact_phone" class="form-control" placeholder="Puhelinnumero" required data-validation-required-message="Ole hyvä ja syötä puhelinnumerosi.">
-                                    <p class="help-block text-danger"></p>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button name="commit" value="Create Contactform" class="btn btn-xl">Lähetä!
+                                    </button>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea name="contactform[contact_msg]" id="contactform_contact_msg" class="form-control" placeholder="Viesti" required data-validation-required-message="Ole hyvä ja kirjoita viesti."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button name="commit" value="Create Contactform" class="btn btn-xl">Lähetä!
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
     <div class="visible-xs"></div>
 <%= render 'footer' %>

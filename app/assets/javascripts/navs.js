@@ -49,6 +49,7 @@ $(document).ready(function(){
 				continue;
 			}
 		}
+		
 		$(".build-navs").append("<li class='currentmenu'><a class='scroller page-scroll' data-menuid='"+header+"' href='#"+id+"'>"+header+"</a></li>");
 
 		links = $(section[i]).find(".addtomenu");
@@ -104,6 +105,7 @@ $(document).ready(function(){
 			if ($('.visible-xs').is(':visible')) //puhelimen eventti (jos pieni näyttö)
 			{
 
+
 				if( $(this).find(".scroller").hasClass("clickedflag") )
 				{
 
@@ -120,7 +122,7 @@ $(document).ready(function(){
 				{
 					$(".clickedflag").removeClass("clickedflag");
 					$(this).find(".scroller").addClass("clickedflag");
-					//event.preventDefault();
+					event.preventDefault();
 				}
 
 				$(".dropper").each(function(){
@@ -144,7 +146,6 @@ $(document).ready(function(){
 			    $('html, body').stop().animate({
 			        scrollTop: $($anchor.attr('href')).offset().top
 			    }, 1500, 'easeInOutExpo');
-			    event.preventDefault();
 			}
 		}).on("mouseover", function(){
 			if (!$('.visible-xs').is(':visible')) //desktop
