@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<% @blog.each do |blog| %>
+<div class="row">
+                <div class="postwrapper">
+                    <div class="col-sm-3 postinfo">
+                        <div class="team-member">
+                            <img src="assets/koodikarpat.png" class="img-responsive img-circle" alt="Avatar">
+                            <h3><%= blog.name %></h3>
+                            <p class="postdate"><%= blog.created_at %></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 bg-light-gray postcontent">
+                    <h3><%= blog.subject %></h3>
+                    <%= simple_format(blog.content) %>
+                    </div>
+                </div>
+
+            </div>
+<% end %>
+<a href="http://koodikarpat.com/">Tarkista viestisi Koodikarpat.com-projektisivulla</a>

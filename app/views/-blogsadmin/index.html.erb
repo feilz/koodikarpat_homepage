@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Blogs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Name</th>
+      <th>Posted</th>
+      <th>Subject</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blogs.each do |blog| %>
+      <tr>
+        <td><%= blog.project %></td>
+        <td><%= blog.name %></td>
+        <td><%= blog.posted %></td>
+        <td><%= blog.subject %></td>
+        <td><%= blog.content %></td>
+        <td><a href="<%= blog.id %>/edit">Edit</a></td>
+        <td><%= button_to "Destroy", "#{blog.id}", :method=>:delete, :class=>:destroy %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Blog', new_blog_path %>(normal user)
