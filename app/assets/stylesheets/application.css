@@ -26,6 +26,9 @@ header#page-lukkari {
 header#page-robootti {
     background-image: url(../assets/header-bg-robootti.jpg);
 }
+header#page-koodikarpat-peli {
+	background-image: url(../assets/header-bg-koodikarpat-peli.jpg);
+}
 
 .navbar > .container .navbar-brand {
 	padding:0;

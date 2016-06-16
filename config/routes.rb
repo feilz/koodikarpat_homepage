@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  resources :blogs
+  resources :blogsadmin
   resources :contactforms
+
   get '/lukkari', to: 'lukkari#index'
 
   get '/robootti', to: 'robootti#index'
