@@ -20,6 +20,12 @@ header#page-java-alkeet {
 header#page-grafiikka {
     background-image: url(../assets/header-bg-grafiikka.jpg);
 }
+header#page-lukkari {
+    background-image: url(../assets/header-bg-lukkari.jpg);
+}
+header#page-robootti {
+    background-image: url(../assets/header-bg-robootti.jpg);
+}
 
 .navbar > .container .navbar-brand {
 	padding:0;
@@ -51,7 +57,7 @@ header .intro-text .intro-lead-in {
 		height:50px;
 	}
 	header .intro-text .intro-heading {
-	    font-size: 43px;
+	    font-size: 40px;
 	}
 	header .intro-text .intro-lead-in {
 		font-size:18px;
@@ -162,12 +168,19 @@ span.kk-font {
 #blog .postwrapper {
 	border-radius: 3px 5px 5px 3px;
 	overflow:hidden;
+	margin-bottom:15px;
 }
 #blog .postinfo {
 	background-color: #fed136;
-	padding-top:15px;
-	margin-bottom: -99999px;
-    padding-bottom: 99999px;
+	margin-bottom:-99999px;
+    padding:10px 0 99999px 0;
+}
+#blog .postinfo > .team-member {
+	margin-bottom:10px;
+}
+#blog .postinfo > .team-member > img {
+	background-color:#f7f7f7;
+	max-width:250px;
 }
 #blog .postcontent {
 	border-radius: 0 3px 3px 0;
@@ -176,6 +189,21 @@ span.kk-font {
 }
 #blog .postdate {
 	margin-top:25px;
+	margin-bottom: 0;
+	background-color:#222;
+	color:#fff;
+}
+
+@media (max-width: 767px) {
+	#blog .postwrapper {
+		border-radius: 0;
+	}
+	#blog .postcontent {
+		padding-top:5px;
+	}
+	#blog .postdate {
+		margin-top:15px;
+	}
 }
 
 .dropdowntabledesktop
@@ -235,6 +263,10 @@ span.kk-font {
 @media (max-width: 767px) {
 	.dropdownoption {
 	    color: #fff;
+	}
+	.timeline>li .timeline-image h4 {
+	    margin-top: 7px;
+	    font-size: 7px;
 	}
 }
 
